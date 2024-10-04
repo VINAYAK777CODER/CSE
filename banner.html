@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+
+      .parent {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .box {
+        height: 50%;
+        width: 20%;
+        display: flex;
+        flex-direction: column; /* Align content vertically */
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+      }
+
+      .button {
+        height: 50px;
+        width: 100px;
+        border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: aqua;
+        border-radius: 10%;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box">
+        <div class="features">
+          <h2>Basic</h2>
+          <h4>$10/month</h4>
+          <h5>Feature 1</h5>
+          <h5>Feature 2</h5>
+        </div>
+        <div class="button">
+          <span>Subscribe</span>
+          <!-- Added text inside the button -->
+        </div>
+      </div>
+      <div class="box">
+        <div class="features">
+          <h2>Standard</h2>
+          <h4>$20/month</h4>
+          <h5>Feature 1</h5>
+          <h5>Feature 2</h5>
+          <h5>Feature 3</h5>
+        </div>
+        <div class="button">
+          <span>Subscribe</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="features">
+          <h2>Premium</h2>
+          <h4>$30/month</h4>
+          <h5>Feature 1</h5>
+          <h5>Feature 2</h5>
+          <h5>Feature 3</h5>
+          <h5>Feature 4</h5>
+        </div>
+        <div class="button">
+          <span>Subscribe</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
