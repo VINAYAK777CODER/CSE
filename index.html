@@ -1,10 +1,57 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSE-C</title>
+    <title>document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .parent{
+            border:2px solid purple;
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(238, 226, 210);
+            /* flex-wrap: wrap; */
+            /* align-content: flex-start; */
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(237, 99, 122);
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        #box-1{
+            /* flex-grow: 1; */
+            /* order: 1; */
+        }
+        #box-2{
+            flex-shrink: 2;
+
+        }
+        
+    </style>
 </head>
 <body>
-    <p>hello</p>
+    <div class="parent">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div>
+    </div>
+
 </body>
 </html>
